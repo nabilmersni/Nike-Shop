@@ -1,0 +1,262 @@
+@font-face {
+  font-family: displayFont;
+  src: url(../assets/fonts/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+  font-family: navFont;
+  src: url(../assets/fonts/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+  font-family: primaryFont;
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 8rem;
+  width: 100%;
+  min-height: 10.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-family: navFont;
+  
+
+  &__logo{
+    width: 10rem;
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 50rem;
+  }
+
+  &__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    &__link, &__link:visited, &__link:link{
+      text-decoration: none;
+      color: #E5E0FF;
+      font-size: 1.6rem;
+      margin-right: 5rem;
+      transition: all 0.15s;
+
+      &:hover{
+        color: #ff8725;
+      }
+    }
+  }
+
+  &__search{
+    &-group{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 4rem;
+
+      &::after{
+        content: "";
+        display: block;
+        width: 0.05rem;
+        height: 50%;
+        background-color: rgba(229, 224, 255, 0.2);
+        border-radius: 100rem;
+        position: absolute;
+        top: 50%;
+        left: 3.7rem;
+        transform: translate(-50%,-50%);
+        transform-origin: center;
+      }
+    }
+
+    &-icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(60%,50%);
+      width: 1.8rem;
+      cursor: pointer;
+    }
+
+    &-input{
+      background-color: #3A3D64;
+      border-radius: 1000rem;
+      border: 0.15rem solid rgba(229, 224, 255, 0);
+      padding: 1rem 2rem 1rem 5rem;
+      transition: all 0.3s;
+      outline:none;
+      font-family: navFont;
+      color: #E5E0FF;
+      min-width: 30rem;
+
+      &::placeholder{
+        color: rgba(229, 224, 255, 0.5);
+      }
+
+      &:focus{
+        border: 0.15rem solid rgba(229, 224, 255, 0.5);
+        // border: 3px solid #555;
+      }
+    }
+
+    
+  }
+
+  &__shop-cart{
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100rem;
+    background-color: #3A3D64;
+    cursor: pointer;
+    transition: all 0.2s;
+
+
+    &-icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 2rem;
+      color: #e5e0ff;
+      transition: all 0.2s;
+    }
+
+    &:hover &-icon{
+      color: #ff8725;
+    }
+
+    &:hover{
+      background-color: rgba(255, 135, 37, 0.15);
+    }
+  }
+
+}
+
+.loader{
+  display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+
+    &__container{
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top right, #262427, #221D35);
+    }
+
+    &__animation{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 45rem;
+        animation: fadeIn 1s ease-in;
+    }
+}
+
+.header{
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #262427, #221D35);
+
+    &__container{
+      overflow: hidden;
+    }
+
+    &__title{
+      font-family: displayFont;
+      font-size: 10rem;
+      line-height: 11rem;
+      color: #7262AF;
+      font-weight: 100;
+    }
+
+    &__nike__animation{
+        position: absolute;
+        width: 90rem;
+        bottom: -18%;
+        left: -6%;
+        transform: rotate(-9deg);
+        mix-blend-mode:overlay;
+        opacity: 0.4;
+    }
+
+}
+
+
+
+
+
+
+

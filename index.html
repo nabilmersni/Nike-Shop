@@ -6,10 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="assets/img/nike.png" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Nike Shop</title>
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__container">
+            <lottie-player class="loader__animation" src="https://assets4.lottiefiles.com/packages/lf20_YTnmEHUn88.json"
+                background="transparent" speed="1" loop autoplay>
+            </lottie-player>
+        </div>
+    </div>
+    <nav class="nav">
+        <img class="nav__logo" src="./assets/img/nike_logo.png" alt="logo">
+
+        <div class="nav__right">
+            <div class="nav__links">
+                <a class="nav__links__link" href="#">Men</a>
+                <a class="nav__links__link" href="#">Women</a>
+                <a class="nav__links__link" href="#">Kids</a>
+            </div>
+            <div class="nav__search-group">
+                <img class="nav__search-icon" src="./assets/img/search-icon.png" alt="search-icon">
+                <input class="nav__search-input" type="text" placeholder="Search">
+            </div>
+            <a href="#" class="nav__shop-cart">
+                <svg class="nav__shop-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.476 44.703">
+                    <g id="shop_cart" data-name="shop cart" transform="translate(-4.096 -1)">
+                        <g id="Layer_2" data-name="Layer 2" transform="translate(4.096 1)">
+                            <path id="Path_1" data-name="Path 1"
+                                d="M18.892,20.746a8.941,8.941,0,0,1-8.777-7.182,1.509,1.509,0,0,1,2.98-.477,5.96,5.96,0,0,0,11.668,0,1.509,1.509,0,0,1,2.98.477A8.941,8.941,0,0,1,18.892,20.746Z"
+                                transform="translate(-1.154 4.318)" fill="currentColor" />
+                            <path id="Path_2" data-name="Path 2"
+                                d="M35.1,42.4H8.572A4.47,4.47,0,0,1,4.1,37.706L5.309,12.017A4.47,4.47,0,0,1,9.779,7.74h24.11a4.47,4.47,0,0,1,4.47,4.277l1.207,25.689A4.47,4.47,0,0,1,35.1,42.4ZM9.779,10.735a1.49,1.49,0,0,0-1.49,1.49L7.082,37.855a1.49,1.49,0,0,0,1.49,1.565H35.1a1.49,1.49,0,0,0,1.49-1.565L35.379,12.166a1.49,1.49,0,0,0-1.49-1.49Z"
+                                transform="translate(-4.096 2.303)" fill="currentColor" />
+                            <path id="Path_3" data-name="Path 3"
+                                d="M27.881,12.548H24.9V9.941a5.96,5.96,0,0,0-11.921,0v2.608H10V9.941a8.941,8.941,0,1,1,17.881,0Z"
+                                transform="translate(-1.203 -1)" fill="currentColor" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+    </nav>
+    <header class="header">
+
+
+
+        <div class="header__container">
+            <h1 class="header__title">
+                <!--Just<br>Do<br>It !-->
+            </h1>
+
+            <lottie-player class="header__nike__animation"
+                src="https://lottie.host/42f7ee3e-e406-4a43-ac87-62a84d363f90/BipVuRuKg7.json" background="transparent"
+                speed="1" autoplay>
+            </lottie-player>
+        </div>
+    </header>
 
 
     <script src="js/script.js"></script>
