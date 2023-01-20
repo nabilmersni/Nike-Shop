@@ -52,18 +52,39 @@
 
     </nav>
     <header class="header">
-
-
+        <div class="header__circle header__circle-1"></div>
+        <div class="header__circle header__circle-2"></div>
+        <div class="header__circle header__circle-3"></div>
+        <div class="header__circle header__circle-4"></div>
 
         <div class="header__container">
-            <h1 class="header__title">
-                <!--Just<br>Do<br>It !-->
-            </h1>
+            <div class="header__title__container">
+                <h1 class="header__title">
+                    Just<br>Do<br>It
+                </h1>
 
-            <lottie-player class="header__nike__animation"
-                src="https://lottie.host/42f7ee3e-e406-4a43-ac87-62a84d363f90/BipVuRuKg7.json" background="transparent"
-                speed="1" autoplay>
-            </lottie-player>
+                <lottie-player class="header__nike__animation"
+                    src="https://lottie.host/42f7ee3e-e406-4a43-ac87-62a84d363f90/BipVuRuKg7.json"
+                    background="transparent" speed="1">
+                </lottie-player>
+            </div>
+
+            <div class="header__shoes">
+                <img src="./assets/img/shoes.png" alt="" class="header__shoes-img">
+                <div class="header__shoes__colors">
+                    <input class="colorInput" type="radio" id="color1" name="shoesColor" value="0">
+                    <label for="color1" class="header__shoes__colors__color header__shoes__colors__color--1"></label>
+
+                    <input class="colorInput" type="radio" id="color2" name="shoesColor" value="1" checked>
+                    <label for="color2" class="header__shoes__colors__color header__shoes__colors__color--2"></label>
+
+                    <input class="colorInput" type="radio" id="color3" name="shoesColor" value="2">
+                    <label for="color3" class="header__shoes__colors__color header__shoes__colors__color--3"></label>
+
+                </div>
+                <h2 class="header__shoes__name">Air Jordan 1<br>Mid</h2>
+            </div>
+
         </div>
     </header>
 
