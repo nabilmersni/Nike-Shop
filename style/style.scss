@@ -220,7 +220,7 @@ body{
 }
 
 .loader{
-  // display: none;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -282,8 +282,8 @@ body{
       }
 
       &-4{
-        top: 40rem;
-        right: 50rem;
+        top: 35rem;
+        right: 45rem;
         width: 17rem;
         height: 17rem;
       }
@@ -317,7 +317,7 @@ body{
       align-items: center;
 
       &-img{
-        width: 41rem;
+        width: 37rem;
         margin-right: 5rem;
       }
 
@@ -375,6 +375,102 @@ body{
         transform: rotate(-9deg);
         mix-blend-mode:overlay;
         opacity: 0.4;
+    }
+
+    &__slider{
+      position: absolute;
+      bottom: 2rem;
+      right: 4rem;
+      // background-color: rgba(255, 255, 255, 0.13);
+      border-radius: 5rem;
+      z-index: 10;
+      width: 100rem;
+      height: 15rem;
+      align-self: flex-end;
+      // margin: 0 8rem;
+      // margin: 0 8rem 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      cursor: pointer;
+
+      &__item{
+        background-color: #FFF2F2;
+        border-radius: 2rem;
+        min-width: 10rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem 1rem 0;
+
+
+        &__img{
+          margin-left: -3rem;
+          margin-right: 1rem;
+          width: 11rem;
+        }
+
+        &__data{
+          color: #5352BD;
+          &__name{
+            font-size: 1.7rem;
+            font-weight: 800;
+          }
+
+          &__stars{
+            margin-top: 0.5rem;
+            margin-bottom: 2.5rem;
+            &__star{
+              width: 1.2rem;
+              color: #5352BD;
+
+              &-inactive{
+              color: #948DCD;
+              }
+            }
+          }
+
+          &__price{
+            font-size: 1.6rem;
+            font-weight: 800;
+          }
+
+          &__colorNB{
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      &__btn{
+        position: relative;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 100rem;
+        background-color: #E5E0FF;
+        cursor: pointer;
+        transition: all 0.2s;
+
+
+        &__icon{
+          transform: translate(-50%,-50%);
+          width: 1.7rem;
+          color: #252229;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transition: all 0.2s;
+        }
+
+        &:hover &__icon{
+          color: #ff8725;
+        }
+    
+        &:hover{
+          background-color: rgba(255, 135, 37, 0.15);
+        }
+      }
     }
 
 }

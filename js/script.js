@@ -4,7 +4,7 @@ const shoesColor = document.querySelector(".header__shoes__colors");
 let currentShoesColor;
 window.addEventListener("load", function () {
   setTimeout(function () {
-    nikeAnimation.play();
+    // nikeAnimation.play();
     loader.style.display = "none";
     document.body.style.overflowY = "visible";
   }, 2500);
