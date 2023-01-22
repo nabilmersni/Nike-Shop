@@ -52,20 +52,22 @@
 
     </nav>
     <header class="header">
-        <div class="header__circle header__circle-1"></div>
-        <div class="header__circle header__circle-2"></div>
-        <div class="header__circle header__circle-3"></div>
-        <div class="header__circle header__circle-4"></div>
+        <div class="header__circle__group">
+            <div class="header__circle header__circle-1"></div>
+            <div class="header__circle header__circle-2"></div>
+            <div class="header__circle header__circle-3"></div>
+            <div class="header__circle header__circle-4"></div>
+        </div>
 
         <div class="header__container">
             <div class="header__title__container">
                 <h1 class="header__title">
-                    Just<br>Do<br>It
+                    Just<br>Do<br><span class="header__title__span">It</span>
                 </h1>
 
                 <lottie-player class="header__nike__animation"
                     src="https://lottie.host/42f7ee3e-e406-4a43-ac87-62a84d363f90/BipVuRuKg7.json"
-                    background="transparent" speed="1" autoplay>
+                    background="transparent" speed="1">
                 </lottie-player>
             </div>
 
@@ -95,129 +97,297 @@
                         transform="translate(-61.52)" fill="currentColor" />
                 </svg>
             </div>
+            <div class="header__slider__shadow header__slider__shadow__left"></div>
+            <div class="header__slider__carousel">
 
-            <div class="header__slider__item">
-                <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
-                <div class="header__slider__item__data">
-                    <h2 class="header__slider__item__data__name">Air Jordan 1 Mid</h2>
-                    <div class="header__slider__item__data__stars">
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 1 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
                     </div>
-                    <p class="header__slider__item__data__price">$300</p>
-                    <p class="header__slider__item__data__colorNB">3 Colors</p>
+                </div>
+
+
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 2 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
+                </div>
+
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 3 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
+                </div>
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 4 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
+                </div>
+
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 5 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
+                </div>
+
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 6 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
+                </div>
+
+                <div class="header__slider__item">
+                    <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
+                    <div class="header__slider__item__data">
+                        <h2 class="header__slider__item__data__name">Air Jordan 7 Mid</h2>
+                        <div class="header__slider__item__data__stars">
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                            <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
+                                <path id="star"
+                                    d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
+                                    transform="translate(0 0)" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <p class="header__slider__item__data__price">$300</p>
+                        <p class="header__slider__item__data__colorNB">3 Colors</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="header__slider__item">
-                <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
-                <div class="header__slider__item__data">
-                    <h2 class="header__slider__item__data__name">Air Jordan 1 Mid</h2>
-                    <div class="header__slider__item__data__stars">
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <p class="header__slider__item__data__price">$300</p>
-                    <p class="header__slider__item__data__colorNB">3 Colors</p>
-                </div>
-            </div>
-
-            <div class="header__slider__item">
-                <img src="./assets/img/shoes.png" alt="shoes pic" class="header__slider__item__img">
-                <div class="header__slider__item__data">
-                    <h2 class="header__slider__item__data__name">Air Jordan 1 Mid</h2>
-                    <div class="header__slider__item__data__stars">
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                        <svg class="header__slider__item__data__stars__star header__slider__item__data__stars__star-inactive"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 15.264">
-                            <path id="star"
-                                d="M12.437,15.264a.779.779,0,0,1-.363-.09l-4.09-2.15-4.09,2.15a.78.78,0,0,1-1.13-.822L3.544,9.8.235,6.573a.78.78,0,0,1,.433-1.33L5.24,4.578,7.285.435a.78.78,0,0,1,1.4,0l2.045,4.143,4.572.665a.78.78,0,0,1,.432,1.33L12.425,9.8l.78,4.554a.78.78,0,0,1-.768.912Z"
-                                transform="translate(0 0)" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <p class="header__slider__item__data__price">$300</p>
-                    <p class="header__slider__item__data__colorNB">3 Colors</p>
-                </div>
-            </div>
+            <div class="header__slider__shadow header__slider__shadow__right"></div>
 
             <div class="header__slider__btn header__slider__btn__next">
                 <svg class="header__slider__btn__icon header__slider__btn__icon--next" id="arrow-next"
